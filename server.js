@@ -1,7 +1,10 @@
+require("dotenv").config({ path: "./.env" });
 const express = require("express");
 const app = express();
-const PORT = 3030;
+const PORT = process.env.mysql.port;
 
-app.listen(PORT, () => {
-  console.log("listing port is", PORT);
+let model = require("./src/models");
+
+model.sequelize.sync({ force: true }).then(() => {
+  app.listen(PORT, () => `listening on port ${PORT}`);
 });

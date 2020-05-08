@@ -4,7 +4,7 @@ module.exports = {
     username: process.env.MYSQL_USERNAME,
     password: process.env.MYSQL_PASSWORD,
     pool: {
-      max: Number(process.env.MYSQL_POOL),
+      max: 20,
       acquire: 30000,
       idle: 10000,
     },

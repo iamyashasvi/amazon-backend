@@ -17,6 +17,8 @@
   },
   "homepage": "https://gitlab.com/mountblue/cohort-12-javascript-2/major-project-alpha#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
