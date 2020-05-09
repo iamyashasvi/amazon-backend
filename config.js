@@ -9,5 +9,6 @@ module.exports = {
       idle: 10000,
     },
     port: process.env.PORT || 3000,
+    NODE_ENV: process.env.NODE_ENV,
   },
 };
