@@ -28,7 +28,6 @@ module.exports = (sequelize, Sequelize) => {
     { freezeTableName: true }
   );
   Account.associate = (models) => {
-    console.log("models", models);
     Account.hasMany(models.address, {
       foreignKey: {
         name: "AddressID",

@@ -15,7 +15,7 @@ module.exports = (sequelize, Sequelize) => {
     },
     { timestamps: false, freezeTableName: true }
   );
-  Photo.assocaite = (models) => {
+  Photo.associate = (models) => {
     Photo.hasMany(models.products, {
       foreignKey: "PhotoId",
     });

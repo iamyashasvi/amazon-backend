@@ -1,5 +1,4 @@
 module.exports = (sequelize, Sequelize) => {
-  console.log("runiingafa/..");
   const Billing = sequelize.define(
     "billings",
     {
