@@ -1,16 +1,7 @@
-require("dotenv").config({ path: "../.env" });
-const Category = require("./models/Category");
-
-const table = Category.Category;
-
-table
+const models = require("./models");
+models.sequelize
   .sync()
-  .then(() =>
-    table.create({
-      CardID: 5677,
-      CategoryName: "demo category",
-    })
-  )
+  .then(() => models.category.create({}))
   .then((data) => {
     console.log(data.toJSON());
   });

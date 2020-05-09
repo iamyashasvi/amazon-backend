@@ -1,17 +1,7 @@
-require("dotenv").config({ path: "../.env" });
-const ItemsBuy = require("./models/ItemsBuy");
-const table = ItemsBuy.ItemsBuy;
-
-table
-  .sync({ force: true })
-  .then(() =>
-    table.create({
-      ItemID: 321,
-      Name: "Detello",
-      Quantity: 3,
-      Price: 678.789,
-    })
-  )
+const models = require("./models");
+models.sequelize
+  .sync()
+  .then(() => models.itemsbuy.create({}))
   .then((data) => {
     console.log(data.toJSON());
   });
