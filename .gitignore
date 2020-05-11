@@ -9,23 +9,6 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-#config files.
-config/
-
-#all ny working file
-demo.js
-demoAmazon.js
-account.js
-address.js
-Associate.js
-billing.js
-category.js
-demo.js
-feature.js
-itemsbuy.js
-photo.js
-product.js
-
 # Runtime data
 pids
 *.pid
